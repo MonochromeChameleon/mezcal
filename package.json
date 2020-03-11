@@ -1,0 +1,22 @@
+{
+  "name": "mezcal",
+  "version": "0.0.1",
+  "description": "Mezcal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonochromeChameleon/mezcal.git"
+  },
+  "keywords": [
+    "Mezcal"
+  ],
+  "author": "Hugh Greenish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MonochromeChameleon/mezcal/issues"
+  },
+  "homepage": "https://github.com/MonochromeChameleon/mezcal#readme"
+}

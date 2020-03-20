@@ -1,0 +1,15 @@
+{
+  "name": "@mezcal/core",
+  "version": "0.0.1",
+  "description": "",
+  "main": "mezcal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hugh Greenish",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@mezcal/plugin-core": "0.0.1"
+  }
+}

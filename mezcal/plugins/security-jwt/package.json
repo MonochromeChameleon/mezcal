@@ -1,0 +1,16 @@
+{
+  "name": "@mezcal/plugin-security-jwt",
+  "version": "0.0.1",
+  "description": "",
+  "main": "jwt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hugh Greenish",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@mezcal/errors": "0.0.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}

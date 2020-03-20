@@ -1,3 +1,17 @@
+# OS X
+.DS_Store*
+Icon?
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+*~
+
 # Logs
 logs
 *.log
@@ -63,6 +77,7 @@ typings/
 .node_repl_history
 
 # Output of 'npm pack'
+*.gz
 *.tgz
 
 # Yarn Integrity file
@@ -103,4 +118,17 @@ dist
 # TernJS port file
 .tern-port
 
+# IDEs
 .idea/
+nbproject/
+*.sublime-project
+*.sublime-workspace
+.vscode/launch.json
+
+**/.tmp/
+
+# Compiled output
+wwwroot
+
+# Testing
+coverage/

@@ -26,4 +26,4 @@ const bottle = `
      -----------------------------
  `;
 
-console.log(`\u001b[32m${bottle}\u001b[39m`);
+export const greenBottle = `\u001b[32m${bottle}\u001b[39m`;

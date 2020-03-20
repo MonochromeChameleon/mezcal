@@ -1,0 +1,6 @@
+# Ignore these files/folders:
+
+node_modules
+wwwroot
+.coverage
+.tmp

@@ -1,0 +1,16 @@
+{
+  "name": "@mezcal/plugin-core-context",
+  "version": "0.0.1",
+  "description": "",
+  "main": "context.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hugh Greenish",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@mezcal/errors": "0.0.1",
+    "@mezcal/utils": "0.0.1"
+  }
+}

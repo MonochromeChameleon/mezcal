@@ -1,5 +1,5 @@
-import { Mezcal } from '../../mezcal/core/mezcal';
-import { DefaultHeadersPlugin } from '../../mezcal/plugins/default-headers';
+import { Mezcal } from '../../mezcal/core/mezcal.js';
+import { DefaultHeadersPlugin } from '../../mezcal/plugins/default-headers/default-headers.js';
 
 describe('Default headers plugin', () => {
   const mz = new Mezcal();

@@ -1,5 +1,5 @@
-import { Mezcal } from '../../mezcal/core/mezcal';
-import { NotFoundError } from '../../mezcal/errors';
+import { Mezcal } from '../../mezcal/core/mezcal.js';
+import { NotFoundError } from '../../mezcal/errors/errors.js';
 
 describe('Multiple instances', () => {
   const mz1 = new Mezcal();

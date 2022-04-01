@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import { zip } from './zip';
+import { zip } from './zip.js';
 
 export async function readdir(dir) {
   const members = await fs.promises

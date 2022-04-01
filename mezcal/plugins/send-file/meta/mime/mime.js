@@ -2,8 +2,8 @@ import https from 'https';
 import fs from 'fs';
 import path from 'path';
 
-import * as apache from './apache';
-import * as nginx from './nginx';
+import * as apache from './apache.js';
+import * as nginx from './nginx.js';
 
 const parsers = [apache, nginx];
 

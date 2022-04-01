@@ -3,7 +3,7 @@ import signature from 'cookie-signature';
 import fs from 'fs';
 import jsonwebtoken from 'jsonwebtoken';
 
-import { request } from '../mezcal';
+import { request } from '../mezcal.js';
 
 const privateKey = fs.promises.readFile('mezcal/test-server/crypto/jwt-private-key.key');
 

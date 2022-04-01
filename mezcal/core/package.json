@@ -1,6 +1,6 @@
 {
   "name": "@mezcal/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "mezcal.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@mezcal/plugin-core": "0.0.1"
+    "@mezcal/plugin-core": "^0.0.2"
   }
 }

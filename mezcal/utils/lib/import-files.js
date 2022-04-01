@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { readdir } from './reeaddir';
+import { readdir } from './reeaddir.js';
 
 export async function importFiles(dir) {
   if (typeof dir === 'string') {

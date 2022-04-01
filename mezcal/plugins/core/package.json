@@ -1,6 +1,6 @@
 {
   "name": "@mezcal/plugin-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "core.js",
   "scripts": {
@@ -10,10 +10,11 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@mezcal/plugin-core-context": "0.0.1",
-    "@mezcal/plugin-core-error-handler": "0.0.1",
-    "@mezcal/plugin-core-router": "0.0.1",
-    "@mezcal/plugin-core-security": "0.0.1",
-    "@mezcal/utils": "0.0.1"
+    "@mezcal/plugin-core-context": "^0.0.2",
+    "@mezcal/plugin-core-error-handler": "^0.0.2",
+    "@mezcal/plugin-core-log": "^0.0.2",
+    "@mezcal/plugin-core-router": "^0.0.2",
+    "@mezcal/plugin-core-security": "^0.0.2",
+    "@mezcal/utils": "^0.0.2"
   }
 }

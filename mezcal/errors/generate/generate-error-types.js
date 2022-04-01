@@ -38,7 +38,7 @@ details
     const content = template(code, message);
 
     return p.then(() => fs.promises.writeFile(outputPath, content));
-  }, Promise.resolve())
+  }, fs.promises.mkdir(path.resolve('./.tmp'), { recursive: true }))
   .then(() => {
     const exportContent = details.map(({ filename }) => `export * from './${filename}'`).join('\n');
     return fs.promises.writeFile(path.resolve('./.tmp/errors.js'), exportContent);

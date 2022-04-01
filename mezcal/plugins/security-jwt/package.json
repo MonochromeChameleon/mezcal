@@ -1,6 +1,6 @@
 {
   "name": "@mezcal/plugin-security-jwt",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "jwt.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@mezcal/errors": "0.0.1",
+    "@mezcal/errors": "^0.0.2",
     "jsonwebtoken": "^8.5.1"
   }
 }

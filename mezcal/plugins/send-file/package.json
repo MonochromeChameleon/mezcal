@@ -1,6 +1,6 @@
 {
   "name": "@mezcal/plugin-send-file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "send-file.js",
   "scripts": {

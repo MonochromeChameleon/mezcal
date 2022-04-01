@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 
-import { PathPartBase } from './path-part-base';
+import { PathPartBase } from './path-part-base.js';
 
 const termination = Symbol.for('route.termination');
 

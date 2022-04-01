@@ -1,6 +1,6 @@
 {
   "name": "@mezcal/utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "utils.js",
   "scripts": {
@@ -8,6 +8,5 @@
   },
   "author": "Hugh Greenish",
   "license": "MIT",
-  "type": "module",
-  "dependencies": {}
+  "type": "module"
 }

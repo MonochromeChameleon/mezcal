@@ -1,6 +1,6 @@
 import { defineCachedProperty } from '@mezcal/utils';
 
-const parseCookie = (cookieString = '', opts) => {
+const parseCookie = (opts, cookieString = '') => {
   const decode = opts.decode || decodeURIComponent;
   const tryDecode = string => {
     try {
@@ -20,7 +20,7 @@ const parseCookie = (cookieString = '', opts) => {
 export const CookiePlugin = {
   Cookie({ Context }, opts = {}) {
     defineCachedProperty(Context.prototype, 'cookie', function cookie() {
-      return parseCookie(this.req.headers.cookie, opts);
+      return parseCookie(opts, this.req.headers.cookie);
     });
   },
 };

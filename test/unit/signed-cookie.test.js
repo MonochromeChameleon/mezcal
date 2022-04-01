@@ -1,4 +1,4 @@
-import { SignedCookiePlugin } from '../../mezcal/plugins/signed-cookie/signed-cookie';
+import { SignedCookiePlugin } from '../../mezcal/plugins/signed-cookie/signed-cookie.js';
 
 describe('Signed cookie', () => {
   it("doesn't fail on no config", async () => {

@@ -2,11 +2,12 @@ import http from 'http';
 
 import { CoreContextPlugin } from '@mezcal/plugin-core-context';
 import { CoreErrorHandlerPlugin } from '@mezcal/plugin-core-error-handler';
+import { CoreLogPlugin } from '@mezcal/plugin-core-log';
 import { CoreRouterPlugin } from '@mezcal/plugin-core-router';
 import { CoreSecurityPlugin } from '@mezcal/plugin-core-security';
 import { defineCachedProperty } from '@mezcal/utils';
 
-import { greenBottle } from './lib/bottle';
+import { greenBottle } from './lib/bottle.js';
 
 async function handle(req, res) {
   const [route, ctx] = await Promise.all([this.router.route(req.method, req.url), this.createContext(req, res)]);
@@ -21,6 +22,7 @@ async function handle(req, res) {
 export const CorePlugin = {
   CoreContextPlugin,
   CoreErrorHandlerPlugin,
+  CoreLogPlugin,
   CoreRouterPlugin,
   CoreSecurityPlugin,
   DefineInstanceProperties({ ErrorHandler, Router, Security }, opts, mz) {
@@ -38,8 +40,10 @@ export const CorePlugin = {
   Listen(_, opts, mz) {
     Object.defineProperty(mz, 'listen', {
       value(port = 8080) {
+        // eslint-disable-next-line no-promise-executor-return
         return new Promise(resolve => this.server.listen(port, resolve))
-          .then(() => console.log(greenBottle)) // eslint-disable-line no-console
+          .then(() => this.createContext())
+          .then(ctx => ctx.log.info(greenBottle))
           .then(() => this);
       },
     });
@@ -47,8 +51,10 @@ export const CorePlugin = {
   Close(_, opts, mz) {
     Object.defineProperty(mz, 'close', {
       value() {
+        // eslint-disable-next-line no-promise-executor-return
         return new Promise(resolve => this.server.close(resolve))
-          .then(() => console.log('\u001b[34mgoodbye\u001b[39m')) // eslint-disable-line no-console
+          .then(() => this.createContext())
+          .then(ctx => ctx.log.info('\u001b[34mgoodbye\u001b[39m'))
           .then(() => this);
       },
     });

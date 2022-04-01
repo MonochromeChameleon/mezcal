@@ -1,2 +1,2 @@
-export * from './.tmp/errors';
-export * from './lib/http-error';
+export * from './.tmp/errors.js';
+export * from './lib/http-error.js';

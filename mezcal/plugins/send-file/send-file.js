@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import mime from './.tmp/meta';
+import mime from './.tmp/meta.js';
 
 export const SendFilePlugin = {
   SendFile({ Context }) {

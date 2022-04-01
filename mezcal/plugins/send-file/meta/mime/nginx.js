@@ -1,4 +1,4 @@
-export const source = 'https://hg.nginx.org/nginx/raw-file/default/conf/mime.types';
+export const source = 'https://raw.githubusercontent.com/nginx/nginx/master/conf/mime.types';
 
 export const parser = file =>
   file

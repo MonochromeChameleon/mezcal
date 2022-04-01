@@ -1,6 +1,7 @@
 const testFile = {
   rules: {
     'import/no-extraneous-dependencies': 0,
+    'import/no-relative-packages': 0,
   },
   globals: {
     before: false,
@@ -31,11 +32,12 @@ module.exports = {
     'filenames/match-regex': [2, '^(\\d+\\.)?[a-z\\.][a-z0-9\\-\\.]+$'],
     'filenames/no-index': 2,
 
+    'import/extensions': [2, 'always', { ignorePackages: true }],
     'import/no-default-export': 2,
     'import/no-extraneous-dependencies': 2,
     'import/prefer-default-export': 0,
   },
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2019,
     sourceType: 'module',

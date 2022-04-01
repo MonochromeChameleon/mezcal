@@ -1,5 +1,5 @@
 import { zip } from '@mezcal/utils';
-import { method, pathPart, terminate } from './path-part';
+import { method, pathPart, terminate } from './path-part.js';
 
 export class Route {
   constructor(routeDef, ...matchers) {

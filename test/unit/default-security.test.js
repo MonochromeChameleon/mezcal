@@ -1,4 +1,4 @@
-import { Mezcal } from '../../mezcal/core/mezcal';
+import { Mezcal } from '../../mezcal/core/mezcal.js';
 
 describe('Default security', () => {
   const mz = new Mezcal();

@@ -1,4 +1,4 @@
-import { Mezcal } from '../../mezcal/core/mezcal';
+import { Mezcal } from '../../mezcal/core/mezcal.js';
 
 describe('Core library', () => {
   const mz = new Mezcal();

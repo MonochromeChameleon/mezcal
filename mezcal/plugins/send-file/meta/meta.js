@@ -1,4 +1,4 @@
-import { process } from './mime/mime';
+import { process } from './mime/mime.js';
 
 const processAll = async () => {
   await process();

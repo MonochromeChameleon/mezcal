@@ -1,6 +1,6 @@
 {
   "name": "@mezcal/plugin-signed-cookie",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "signed-cookie.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@mezcal/utils": "0.0.1"
+    "@mezcal/utils": "^0.0.2"
   },
   "peerDependencies": {
     "@mezcal/plugin-cookie": "0.0.1"

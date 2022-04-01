@@ -1,4 +1,4 @@
-import { CookiePlugin } from '../../mezcal/plugins/cookie/cookie';
+import { CookiePlugin } from '../../mezcal/plugins/cookie/cookie.js';
 
 class Context {
   constructor(cookie) {

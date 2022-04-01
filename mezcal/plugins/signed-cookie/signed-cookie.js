@@ -7,7 +7,7 @@ const sign = (str, secret) => {
   return `${str}.${sig}`;
 };
 
-const parseSignedCookie = (cookie = {}, opts) => {
+const parseSignedCookie = (opts, cookie = {}) => {
   if (!opts.secret) return cookie;
 
   return Object.keys(cookie)
@@ -31,7 +31,7 @@ const parseSignedCookie = (cookie = {}, opts) => {
 export const SignedCookiePlugin = {
   SignedCookie({ Context }, opts = {}) {
     defineCachedProperty(Context.prototype, 'signedCookie', function signedCookie() {
-      return parseSignedCookie(this.cookie, opts);
+      return parseSignedCookie(opts, this.cookie);
     });
   },
 };

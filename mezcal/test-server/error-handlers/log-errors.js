@@ -1,4 +1,4 @@
 const isError = e => e;
-const handler = e => console.log(e); // eslint-disable-line no-console
+const handler = (e, ctx) => ctx.log.error(e);
 
 export { isError, handler };

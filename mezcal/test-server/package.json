@@ -1,6 +1,6 @@
 {
   "name": "@mezcal/test-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "mezcal.js",
   "scripts": {
@@ -10,15 +10,15 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@mezcal/core": "0.0.1",
-    "@mezcal/errors": "0.0.1",
-    "@mezcal/plugin-cookie": "0.0.1",
-    "@mezcal/plugin-default-headers": "0.0.1",
-    "@mezcal/plugin-path-params": "0.0.1",
-    "@mezcal/plugin-query-params": "0.0.1",
-    "@mezcal/plugin-request-body": "0.0.1",
-    "@mezcal/plugin-security-jwt": "0.0.1",
-    "@mezcal/plugin-send-file": "0.0.1",
-    "@mezcal/plugin-signed-cookie": "0.0.1"
+    "@mezcal/core": "^0.0.2",
+    "@mezcal/errors": "^0.0.2",
+    "@mezcal/plugin-cookie": "^0.0.2",
+    "@mezcal/plugin-default-headers": "^0.0.2",
+    "@mezcal/plugin-path-params": "^0.0.2",
+    "@mezcal/plugin-query-params": "^0.0.2",
+    "@mezcal/plugin-request-body": "^0.0.2",
+    "@mezcal/plugin-security-jwt": "^0.0.2",
+    "@mezcal/plugin-send-file": "^0.0.2",
+    "@mezcal/plugin-signed-cookie": "^0.0.2"
   }
 }

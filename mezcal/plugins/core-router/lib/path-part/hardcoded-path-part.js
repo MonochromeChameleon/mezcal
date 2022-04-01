@@ -1,4 +1,4 @@
-import { PathPartBase } from './path-part-base';
+import { PathPartBase } from './path-part-base.js';
 
 export class HardcodedPathPart extends PathPartBase {
   constructor(part) {

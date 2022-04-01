@@ -1,4 +1,4 @@
-import { ParameterPathPart } from './parameter-path-part';
+import { ParameterPathPart } from './parameter-path-part.js';
 
 const regex = Symbol.for('route.regex');
 

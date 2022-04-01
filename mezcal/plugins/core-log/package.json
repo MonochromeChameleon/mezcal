@@ -1,15 +1,12 @@
 {
-  "name": "@mezcal/plugin-cookie",
+  "name": "@mezcal/plugin-core-log",
   "version": "0.0.2",
   "description": "",
-  "main": "cookie.js",
+  "main": "log.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Hugh Greenish",
   "license": "MIT",
-  "type": "module",
-  "dependencies": {
-    "@mezcal/utils": "^0.0.2"
-  }
+  "type": "module"
 }

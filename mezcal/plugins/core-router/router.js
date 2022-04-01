@@ -1,8 +1,8 @@
 import { defineCachedProperty, importFiles } from '@mezcal/utils';
 import { NotFoundError } from '@mezcal/errors';
 
-import { Route } from './lib/route';
-import { buildRouteTree } from './utils/build-route-tree';
+import { Route } from './lib/route.js';
+import { buildRouteTree } from './utils/build-route-tree.js';
 
 const notFound = {
   handler() {

@@ -1,8 +1,8 @@
-import { CatchAllPathPart } from './path-part/catchall-path-part';
-import { HardcodedPathPart } from './path-part/hardcoded-path-part';
-import { ParameterPathPart } from './path-part/parameter-path-part';
-import { RegexPathPart } from './path-part/regex-path-part';
-import { TerminatingPathPart } from './path-part/terminating-path-part';
+import { CatchAllPathPart } from './path-part/catchall-path-part.js';
+import { HardcodedPathPart } from './path-part/hardcoded-path-part.js';
+import { ParameterPathPart } from './path-part/parameter-path-part.js';
+import { RegexPathPart } from './path-part/regex-path-part.js';
+import { TerminatingPathPart } from './path-part/terminating-path-part.js';
 
 export const method = meth => (meth === 'ALL' ? new CatchAllPathPart() : new HardcodedPathPart(meth));
 

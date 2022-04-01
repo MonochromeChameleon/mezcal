@@ -1,4 +1,4 @@
-import { RouteTree } from '../lib/route-tree';
+import { RouteTree } from '../lib/route-tree.js';
 
 const catchall = Symbol.for('route.catchall');
 const param = Symbol.for('route.param');

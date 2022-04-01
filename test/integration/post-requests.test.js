@@ -1,4 +1,4 @@
-import { request } from '../mezcal';
+import { request } from '../mezcal.js';
 
 describe('POST requests', () => {
   it('POST request', async () => {

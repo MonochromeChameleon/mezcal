@@ -1,6 +1,6 @@
 {
   "name": "@mezcal/plugin-query-params",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "query-params.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@mezcal/utils": "0.0.1"
+    "@mezcal/utils": "^0.0.2"
   }
 }
